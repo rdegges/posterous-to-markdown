@@ -4,11 +4,17 @@
 
 ##### GLOBALS
 PANDOC=`which pandoc`
+SED=`which sed`
 OUTDIR='markdown'
 
 
 if [ -z "$PANDOC" ]; then
     echo "Pandoc not found! Please install Pandoc and try again."
+    exit
+fi
+
+if [ -z "$SED" ]; then
+    echo "sed not found! Please install sed and try again."
     exit
 fi
 
@@ -25,6 +31,7 @@ for file in *.html; do
 
     base=${file%.*}
     pandoc -s -r html ${base}.html -o ${OUTDIR}/${base}.md
+    sed -i "s/[ \t]*$//" ${OUTDIR}/${base}.md
     echo "Converting file $file to Markdown... done"
 done
 

@@ -27,9 +27,13 @@ content however you want, style agnostic.
 
 ## Install
 
-The only thing required to run this tool is that you have Pandoc and Bash
-installed and available. If you're on Ubuntu, you can install Pandoc by running
-`sudo apt-get -y install pandoc`.
+To run the script, all you need is:
+
+- Pandoc
+- bash
+- sed
+
+If you're on Ubuntu, you can install Pandoc by running `sudo apt-get -y install pandoc`.
 
 
 ## Usage
@@ -45,6 +49,9 @@ $ curl -L https://github.com/rdegges/posterous-to-markdown/raw/master/convert.sh
 
 You should now see a `markdown` subdirectory, which should contain *all* your
 Posterous HTML posts, in Markdown format!
+
+**NOTE**: The script will also remove any trailing whitespace from your
+outputted Markdown files. This is just to help clean things up.
 
 Here's what it looks like running on my blog:
 
@@ -193,7 +200,6 @@ cleaning up formatting, etc.
 Want to add some functionality to the script? Send a pull request! Some things
 I'd like to add in the future:
 
-- Strip all trailing whitespace.
 - Use footnote-style links (my personal preference).
 - Use # to handle heading stuff (instead of =).
 
