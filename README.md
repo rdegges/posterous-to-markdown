@@ -197,11 +197,7 @@ cleaning up formatting, etc.
 
 ## Contribute
 
-Want to add some functionality to the script? Send a pull request! Some things
-I'd like to add in the future:
-
-- Use footnote-style links (my personal preference).
-- Use # to handle heading stuff (instead of =).
+Want to add some functionality to the script? Send a pull request!
 
 
 [posterous]: https://posterous.com/ "Posterous"

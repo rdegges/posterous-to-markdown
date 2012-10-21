@@ -30,7 +30,7 @@ for file in *.html; do
     fi
 
     base=${file%.*}
-    pandoc -s --columns=80 -r html ${base}.html -o ${OUTDIR}/${base}.md
+    pandoc -s --atx-headers --columns=80 --reference-links -r html ${base}.html -o ${OUTDIR}/${base}.md
     sed -i "s/[ \t]*$//" ${OUTDIR}/${base}.md
     echo "Converting file $file to Markdown... done"
 done
