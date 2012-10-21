@@ -35,6 +35,7 @@ To run the script, all you need is:
 
 If you're on Ubuntu, you can install Pandoc by running `sudo apt-get -y install pandoc`.
 
+If you're on OS X or Windows, you can install Pandoc by using one of their provided [installers](http://code.google.com/p/pandoc/downloads/list).
 
 ## Usage
 
