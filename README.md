@@ -47,6 +47,23 @@ You should now see a `markdown` subdirectory, which should contain *all* your
 Posterous HTML posts, in Markdown format!
 
 
+## Afterwards
+
+Once you've ran the script, you'll have a nice `markdown` folder filled with
+your converted posts. You can now manually edit the files however you wish,
+cleaning up formatting, etc.
+
+
+## Contribute
+
+Want to add some functionality to the script? Send a pull request! Some things
+I'd like to add in the future:
+
+- Strip all trailing whitespace.
+- Use footnote-style links (my personal preference).
+- Use # to handle heading stuff (instead of =).
+
+
 [posterous]: https://posterous.com/ "Posterous"
 [twitter]: https://twitter.com "Twitter"
 [export-my-posts]: https://exportmyposts.jazzychad.net/ "Export My Posts"
